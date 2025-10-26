@@ -54,7 +54,7 @@ export function Login() {
     <form onSubmit={handleSubmit} className="login-form">
       <h2>Login</h2>
 
-      <img className='image' src="src\assets\icon-7797704_640.png" alt="" />
+      <img className='image' src="images/logo.png" alt="" />
 
       <input
         name="identifier"
