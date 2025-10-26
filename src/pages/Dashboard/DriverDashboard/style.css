@@ -1,0 +1,159 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Driver Dashboard like passenger dashboard */
+.driver-dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.driver-dashboard header {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 12px 16px;
+  background: #0893c6; /* Keep your header color */
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logout-button {
+  background: #ff4d4f; /* Keep your logout color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  flex: 1 1 auto; /* Fill remaining space */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Dashboard won’t scroll */
+  padding: 8px;
+}
+
+/* Tab content fills remaining space */
+.tab-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Only chat scroll inside chat-box */
+}
+
+/* Bottom navigation */
+.bottom-nav {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background: #f0f2f5;
+  border-top: 1px solid #ddd;
+}
+
+.nav-item {
+  flex: 1;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #555;
+  font-size: 12px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.nav-item.active {
+  color: #12a0d8;
+  font-weight: 600;
+}
+
+/* === GlobalChat adjustments === */
+.chat-container {
+  flex: 1 1 auto; /* Fill remaining space */
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  /* Keep your colors */
+  background: #f0f2f5;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+}
+
+/* Chat header stays fixed inside chat container */
+.chat-container h3 {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 16px 20px;
+  /* Keep your gradient */
+  background: linear-gradient(135deg, #00a884 0%, #00bfa5 100%);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+/* Chat messages scroll inside chat-box only */
+.chat-box {
+  flex: 1 1 auto; /* Grows naturally */
+  overflow-y: auto; /* Only this scrolls */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+
+/* Chat input stays fixed at bottom */
+.chat-input {
+  flex: 0 0 auto;
+  padding: 8px 12px 12px;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  /* Keep your input background color */
+  background: #f0f2f5;
+}
+
+.map-tab {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-button {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: none;
+  background: #00a884;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.location-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.location-button.active {
+  background: #ff4d4f;
+}
