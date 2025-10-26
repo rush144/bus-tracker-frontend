@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './style.css';
-import { BACKEND_URL } from '../../../config';
 
 export function Register() {
   const [form, setForm] = useState({
