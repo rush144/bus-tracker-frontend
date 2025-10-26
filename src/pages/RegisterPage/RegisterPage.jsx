@@ -56,6 +56,8 @@ export function Register() {
     <form onSubmit={handleSubmit} className="register-form">
       <h2>Register</h2>
 
+      <img className='image' src="src\assets\icon-7797704_640.png" alt="" />
+
       <input
         name="name"
         placeholder="Full Name"
