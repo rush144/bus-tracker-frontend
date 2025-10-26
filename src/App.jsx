@@ -11,7 +11,7 @@ import {
   Link,
 } from 'react-router-dom';
 
-import { Register } from './pages/RegisterPage/registerPage';
+import { Register } from './pages/RegisterPage/RegisterPage';
 
 function App() {
   return (
